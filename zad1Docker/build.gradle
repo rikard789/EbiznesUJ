@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.32'
+}
+
+//group 'com.helloworld'
+//version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.xerial:sqlite-jdbc:3.34.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+}
+
+application {
+    mainClassName = 'com.helloworld.HelloWorld'
+}
