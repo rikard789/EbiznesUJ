@@ -14,7 +14,7 @@
 
 Folder with code: ex1Docker \
 Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex1Docker \
-Docker image link: https://hub.docker.com/r/reczko14021/ebiznes_uj \
+Docker image link: https://hub.docker.com/r/reczko14021/ebiznes_uj 
 
 
 ## Exercise 2 - Scala
@@ -30,4 +30,4 @@ Docker image link: https://hub.docker.com/r/reczko14021/ebiznes_uj \
 :x: 5.0 requirement 5
 
 Folder with code: ex2Scala \
-Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex2Scala \
+Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex2Scala 
