@@ -13,9 +13,8 @@
 :white_check_mark: 5.0 requirement 5 
 
 Folder with code: ex1Docker \
-Nagranie pokazujące działanie programu pod nazwą zad1 w folderze zad1Docker \
-Link: https://github.com/rikard789/EbiznesUJ/tree/main/zad1Docker \
-Docker image link: https://hub.docker.com/r/reczko14021/ebiznes_uj
+Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex1Docker \
+Docker image link: https://hub.docker.com/r/reczko14021/ebiznes_uj \
 
 
 ## Exercise 2 - Scala
@@ -29,3 +28,6 @@ Docker image link: https://hub.docker.com/r/reczko14021/ebiznes_uj
 :white_check_mark: 4.5 requirement 4
 
 :x: 5.0 requirement 5
+
+Folder with code: ex2Scala \
+Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex2Scala \
