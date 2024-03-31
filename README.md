@@ -31,3 +31,19 @@ Docker image link: https://hub.docker.com/r/reczko14021/ebiznes_uj
 
 Folder with code: ex2Scala \
 Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex2Scala 
+
+
+## Exercise 3 - Kotlin
+
+:white_check_mark: 3.0 requirement 1
+
+:white_check_mark: 3.5 requirement 2
+
+:x: 4.0 requirement 3
+
+:x: 4.5 requirement 4
+
+:x: 5.0 requirement 5
+
+Folder with code: ex2Scala \
+Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex3Kotlin
