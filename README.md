@@ -45,5 +45,21 @@ Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex2Scala
 
 :x: 5.0 requirement 5
 
-Folder with code: ex2Scala \
+Folder with code: ex3Kotlin \
 Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex3Kotlin
+
+
+## Exercise 3 - Go
+
+:white_check_mark: 3.0 requirement 1
+
+:white_check_mark: 3.5 requirement 2
+
+:x: 4.0 requirement 3
+
+:x: 4.5 requirement 4
+
+:x: 5.0 requirement 5
+
+Folder with code: ex4Go \
+Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex4Go
