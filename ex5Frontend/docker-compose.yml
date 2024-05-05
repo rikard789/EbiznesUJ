@@ -1,0 +1,17 @@
+version: '3'
+services:
+  backend:
+    build: ./server
+    ports:
+      - "1323:1323"
+    volumes:
+      - ./server:/app
+    command: go run app.go
+
+  frontend:
+    build: ./react
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./react:/app
+    command: npm start  

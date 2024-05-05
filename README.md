@@ -1,5 +1,7 @@
 # EbiznesUJ
 
+All video clips showing exercises can be found in demos folder.
+
 ## Exercise 1 - Docker
 
 :white_check_mark: 3.0 requirement 1 
@@ -49,7 +51,7 @@ Folder with code: ex3Kotlin \
 Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex3Kotlin
 
 
-## Exercise 3 - Go
+## Exercise 4 - Go
 
 :white_check_mark: 3.0 requirement 1
 
@@ -63,3 +65,21 @@ Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex3Kotlin
 
 Folder with code: ex4Go \
 Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex4Go
+
+
+## Exercise 5 - Frontend
+
+:white_check_mark: 3.0 requirement 1
+
+:white_check_mark: 3.5 requirement 2
+
+:white_check_mark: 4.0 requirement 3
+
+:white_check_mark: 4.5 requirement 4
+
+:white_check_mark: 5.0 requirement 5
+
+Folder with code: ex5Frontend \
+Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex5Frontend
+
+
