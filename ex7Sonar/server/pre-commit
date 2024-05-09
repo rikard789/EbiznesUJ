@@ -1,0 +1,20 @@
+#!/bin/sh
+
+GO_FILES=$(git diff --cached --name-only --diff-filter=ACMR | grep '.go$')
+
+printf "$GO_FILES"
+
+if [ -n "$GO_FILES" ]; then
+    for FILE in $GO_FILES; do
+      printf "$(go env GOPATH)"
+      echo $(go env GOPATH)
+        $(go env GOPATH)/bin/golangci-lint run $FILE
+        if [[ $? != 0 ]]; then
+            printf "Commit failed! Please fix errors before committing.\n"
+            exit 1
+        fi
+    done
+   git add $GO_FILES
+
+   echo "Go code formatting applied successfully."
+fi
