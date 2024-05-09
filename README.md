@@ -83,4 +83,33 @@ Folder with code: ex5Frontend \
 Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex5Frontend
 
 
+## Exercise 6 - Tests
 
+:white_check_mark: 3.0 requirement 1
+
+:white_check_mark: 3.5 requirement 2
+
+:x: 4.0 requirement 3
+
+:x: 4.5 requirement 4
+
+:x: 5.0 requirement 5
+
+Folder with code: ex6Tests \
+Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex6Tests
+
+
+## Exercise 7 - Sonar
+
+:white_check_mark: 3.0 requirement 1
+
+:white_check_mark: 3.5 requirement 2
+
+:white_check_mark: 4.0 requirement 3
+
+:white_check_mark: 4.5 requirement 4
+
+:x: 5.0 requirement 5
+
+Folder with code: ex7Sonar \
+Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex7FSonar
