@@ -113,3 +113,19 @@ Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex6Tests
 
 Folder with code: ex7Sonar \
 Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex7FSonar
+
+
+## Exercise 8 - OAuth2
+
+:white_check_mark: 3.0 requirement 1
+
+:white_check_mark: 3.5 requirement 2
+
+:x: 4.0 requirement 3
+
+:x: 4.5 requirement 4
+
+:x: 5.0 requirement 5
+
+Folder with code: ex8OAuth2 \
+Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex8OAuth2
