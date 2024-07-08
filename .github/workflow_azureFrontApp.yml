@@ -1,0 +1,47 @@
+name: Build and Deploy Azure Web App
+on:
+  push:
+    branches:
+      - main
+  workflow_dipatch:
+
+jobs:
+  build-backend:
+    name: Backend build
+    runs-on: ubuntu-latest
+
+    steps:
+      -name: Checkout
+        uses: actions:checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and push backend
+      uses: docker/build-push-action@v3
+      with:
+        context: ./ex5Frontend/server
+        file: ./ex5Frontend/server/Dockerfile
+        push: true
+        tags: index.docker.io/${{ secrets.DOCKER_USERNAME }}/backend:latest
+
+      - name: Build and push frontend
+        uses: docker/build-push-action@v3
+        with:
+          context: ./ex5Frontend/react
+          file: ./ex5Frontend/react/Dockerfile
+          push: true
+          tags: index.docker.io/${{ secrets.DOCKER_USERNAME }}/frontend:latest    
+
+      -name: Build and push docker container to registry
+        uses: dokcer/build-push-action@v3
+        with:
+          push: true
+          tags: index.docker.io/${{ secrets.secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_9D899825EDA2412C900E591F03B6676E }}/ebiznes10:${{ github.sha }}
+          file: ./ex5Frontend/react/Dockerfile
