@@ -144,3 +144,19 @@ Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex8OAuth2
 
 Folder with code: ex9ChatgptBot \
 Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex9ChatgptBot
+
+
+## Exercise 10 - Chmura/CI
+
+:white_check_mark: 3.0 requirement 1
+
+:white_check_mark: 3.5 requirement 2
+
+:white_check_mark: 4.0 requirement 3
+
+:x: 4.5 requirement 4
+
+:x: 5.0 requirement 5
+
+Folder with code: ex9ChatgptBot \
+Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex9ChatgptBot
