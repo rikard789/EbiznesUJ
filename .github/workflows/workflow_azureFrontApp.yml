@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+
 workflow_dispatch:
 
 jobs:
@@ -24,12 +25,12 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and push backend
-      uses: docker/build-push-action@v3
-      with:
-        context: ./ex5Frontend/server
-        file: ./ex5Frontend/server/Dockerfile
-        push: true
-        tags: index.docker.io/${{ secrets.DOCKER_USERNAME }}/backend:latest
+        uses: docker/build-push-action@v3
+        with:
+          context: ./ex5Frontend/server
+          file: ./ex5Frontend/server/Dockerfile
+          push: true
+          tags: index.docker.io/${{ secrets.DOCKER_USERNAME }}/backend:latest
 
       - name: Build and push frontend
         uses: docker/build-push-action@v3
@@ -39,9 +40,9 @@ jobs:
           push: true
           tags: index.docker.io/${{ secrets.DOCKER_USERNAME }}/frontend:latest    
 
-      -name: Build and push docker container to registry
-        uses: dokcer/build-push-action@v3
-        with:
-          push: true
-          tags: index.docker.io/${{ secrets.secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_9D899825EDA2412C900E591F03B6676E }}/ebiznes10:${{ github.sha }}
-          file: ./ex5Frontend/react/Dockerfile
+#      - name: Build and push docker container to registry
+#        uses: docker/build-push-action@v3
+#        with:
+#          push: true
+#          tags: index.docker.io/${{ secrets.secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_9D899825EDA2412C900E591F03B6676E }}/ebiznes10:${{ github.sha }}
+#          file: ./ex5Frontend/react/Dockerfile
