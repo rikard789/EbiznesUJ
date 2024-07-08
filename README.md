@@ -109,10 +109,10 @@ Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex6Tests
 
 :white_check_mark: 4.5 requirement 4
 
-:x: 5.0 requirement 5
+:white_check_mark: 5.0 requirement 5
 
 Folder with code: ex7Sonar \
-Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex7FSonar
+Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex7Sonar
 
 
 ## Exercise 8 - OAuth2
