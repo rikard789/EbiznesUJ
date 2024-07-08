@@ -52,20 +52,32 @@ jobs:
           username: ${{ secrets.AZURE_ACR_USERNAME }}
           password: ${{ secrets.AZURE_ACR_PASSWORD }}
 
-      - name: Build and push backend
-        uses: docker/build-push-action@v3
-        with:
-          context: ./ex5Frontend/server
-          file: ./ex5Frontend/server/Dockerfile
-          push: true
-  #        tags: <your-acr-name>.azurecr.io/backend:latest
-          tags: index.docker.io/${{ secrets.secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_9D899825EDA2412C900E591F03B6676E }}/ebiznes10:${{ github.sha }}
+#      - name: Build and push backend
+#        uses: docker/build-push-action@v3
+#        with:
+#          context: ./ex5Frontend/server
+#          file: ./ex5Frontend/server/Dockerfile
+#          push: true
+#  #        tags: <your-acr-name>.azurecr.io/backend:latest
+#          tags: index.docker.io/${{ secrets.secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_9D899825EDA2412C900E591F03B6676E }}/ebiznes10:${{ github.sha }}
+#
+#      - name: Build and push frontend
+#        uses: docker/build-push-action@v3
+#        with:
+#          context: ./ex5Frontend/react
+#          file: ./ex5Frontend/react/Dockerfile
+#          push: true
+#  #        tags: <your-acr-name>.azurecr.io/frontend:latest
+#          tags: index.docker.io/${{ secrets.secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_9D899825EDA2412C900E591F03B6676E }}/ebiznes10:${{ github.sha }}
 
-      - name: Build and push frontend
-        uses: docker/build-push-action@v3
+      - name: Deploy backend to Azure App Service
+        uses: azure/webapps-deploy@v2
         with:
-          context: ./ex5Frontend/react
-          file: ./ex5Frontend/react/Dockerfile
-          push: true
-  #        tags: <your-acr-name>.azurecr.io/frontend:latest
-          tags: index.docker.io/${{ secrets.secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_9D899825EDA2412C900E591F03B6676E }}/ebiznes10:${{ github.sha }}
+          app-name: backend
+          images: index.docker.io/backend:latest
+
+      - name: Deploy frontend to Azure App Service
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: frontend
+          images: index.docker.io/frontend:latest
