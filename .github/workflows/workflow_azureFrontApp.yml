@@ -80,4 +80,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: frontend
-          images: index.docker.io/${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D3BF0E19386840E1AF95D42C31013520 }}/ebiznes10:${{ github.sha }}
+          images: index.docker.io/${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_34540F3FF4554E8AB5A29C3D22F4AF47 }}/ebiznes10:${{ github.sha }}
