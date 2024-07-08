@@ -1,10 +1,10 @@
 import React from 'react';
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 
-import Products from './components/Products';
-import Payments from "./components/Payments";
-import CartBasket from "./components/Cart";
-import useCart from "./hooks/useCart";
+import Products from './components/Products.tsx';
+import Payments from "./components/Payments.tsx";
+import CartBasket from "./components/Cart.tsx";
+import useCart from "./hooks/useCart.tsx";
 import './App.css';
 
 
