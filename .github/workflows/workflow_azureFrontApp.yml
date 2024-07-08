@@ -79,5 +79,7 @@ jobs:
       - name: Deploy frontend to Azure App Service
         uses: azure/webapps-deploy@v2
         with:
-          app-name: frontend
-          images: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_f9115f5ba31b4cc6b31d5f96a419ff87 }}/ebiznes10:${{ github.sha }}
+          app-name: 'KrzysztofReczekApp'
+          slot-name: 'production'
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_34540f3ff4554e8ab5a29c3d22f4af47 }}
+          images: 'index.docker.io/${{ secrets.AZURE_ACR_USERNAME }}/ebiznes10:${{ github.sha }}'
