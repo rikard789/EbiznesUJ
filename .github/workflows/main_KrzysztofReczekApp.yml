@@ -80,8 +80,8 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASS }}
+          username: ${{ secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_F9115F5BA31B4CC6B31D5F96A419FF87 }}
+          password: ${{ secrets.AZUREAPPSERVICE_CONTAINERPASSWORD_0642437AA6F249D2BBCF0C446915D691 }}
 #
 #      - name: Deploy backend to Azure App Service
 #        uses: azure/webapps-deploy@v2
@@ -94,9 +94,9 @@ jobs:
       - name: Deploy frontend to Azure App Service
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'KrzysztofReczekAppFrontend'
+          app-name: 'KrzysztofReczekApp'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_Frontend }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_34540f3ff4554e8ab5a29c3d22f4af47 }}
           images: 'index.docker.io/${{ secrets.DOCKER_USERNAME }}/frontend:latest'
 
   notify:
