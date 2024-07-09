@@ -46,8 +46,10 @@ jobs:
       uses: azure/docker-login@v1
       with:
         login-server: https://index.docker.io/v1
-        username: ${{ secrets.AZURE_ACR_USERNAME }}
-        password: ${{ secrets.AZURE_ACR_PASSWORD }}
+#        username: ${{ secrets.AZURE_ACR_USERNAME }}
+        username: ${{ secrets.DOCKER_USERNAME }}
+#        password: ${{ secrets.AZURE_ACR_PASSWORD }}
+        password: ${{ secrets.DOCKER_PASS }}
 
     - name: Deploy frontend to Azure App Service
       uses: azure/webapps-deploy@v2
