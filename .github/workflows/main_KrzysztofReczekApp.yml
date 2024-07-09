@@ -22,13 +22,13 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASS }}
 
-      - name: Build and push backend
-        uses: docker/build-push-action@v3
-        with:
-          context: ./ex5Frontend/server
-          file: ./ex5Frontend/server/Dockerfile
-          push: true
-          tags: index.docker.io/${{ secrets.DOCKER_USERNAME }}/backend:latest
+#      - name: Build and push backend
+#        uses: docker/build-push-action@v3
+#        with:
+#          context: ./ex5Frontend/server
+#          file: ./ex5Frontend/server/Dockerfile
+#          push: true
+#          tags: index.docker.io/${{ secrets.DOCKER_USERNAME }}/backend:latest
 
       - name: Build and push frontend
         uses: docker/build-push-action@v3
@@ -36,7 +36,8 @@ jobs:
           context: ./ex5Frontend/react
           file: ./ex5Frontend/react/Dockerfile
           push: true
-          tags: index.docker.io/${{ secrets.DOCKER_USERNAME }}/frontend:latest    
+#          tags: index.docker.io/${{ secrets.DOCKER_USERNAME }}/frontend:latest
+          tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_f9115f5ba31b4cc6b31d5f96a419ff87 }}/ebiznes10:${{ github.sha }}
 
   deploy-azure:
     needs: [build]
