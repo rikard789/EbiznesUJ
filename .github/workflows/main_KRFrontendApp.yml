@@ -31,7 +31,8 @@ jobs:
       with:
         push: true
         tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_703c68503ada4538a5ea07776b4d1422 }}/frontend:${{ github.sha }}
-        file: ./Dockerfile
+        context: ./ex5Frontend/react
+        file: ./ex5Frontend/react/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
