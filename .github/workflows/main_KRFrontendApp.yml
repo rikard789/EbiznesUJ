@@ -50,3 +50,24 @@ jobs:
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_df9e164e7a71416a9012e0dd55da9a30 }}
         images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_703c68503ada4538a5ea07776b4d1422 }}/frontend:${{ github.sha }}'
+
+
+  notify:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: 'production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    steps:
+      - name: Send notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: Build Notification
+          body: Build completed successfully.
+          to: ${{ secrets.MAIL_RECIPIENT }}
+          from: ${{ secrets.SMTP_USERNAME }}
