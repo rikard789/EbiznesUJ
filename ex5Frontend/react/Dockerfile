@@ -9,6 +9,7 @@ WORKDIR /app
 COPY package.json ./
 COPY public ./public
 COPY src ./src
+COPY src ./tsconfig.json
 
 RUN npm install
 
