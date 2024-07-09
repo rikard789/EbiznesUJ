@@ -158,5 +158,5 @@ Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex9ChatgptBot
 
 :x: 5.0 requirement 5
 
-Folder with code: ex9ChatgptBot \
-Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex9ChatgptBot
+Folder with code: ex10Cloud_CI \
+Link: https://github.com/rikard789/EbiznesUJ/tree/main/ex10Cloud_CI
